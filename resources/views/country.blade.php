@@ -15,7 +15,7 @@
     @endphp
     @foreach($countries as $country)
         <h2>{{ $country->getAttributes()['name'] }}</h2>
-        <p>{{ $country->countries }}</p>
+        <p>{{ \App\City::class->country }}</p>
     @endforeach
 </body>
 </html>
