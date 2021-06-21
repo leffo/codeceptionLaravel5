@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
 
 // this is a comment for route
 Route::get('/country', 'CountryController@index');
