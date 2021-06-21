@@ -15,4 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// this is a comment for route
 Route::get('/country', 'CountryController@index');
