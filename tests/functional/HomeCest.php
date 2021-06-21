@@ -11,6 +11,6 @@ class HomeCest
     {
         $I->wantTo('check home page');
         $I->amOnRoute('home');
-        $I->see('Laravel');
+        $I->see('DOCS');
     }
 }

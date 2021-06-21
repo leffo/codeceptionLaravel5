@@ -46,4 +46,21 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * Удаляем пользователя по $id
+     *
+     * @param $id
+     * @return string[]
+     */
+    public static function deleteUser($id){
+
+        if(self::destroy($id)){
+            return ['status'=>'Пользователь удален'];
+        } else {
+            return ['error'=>'Ошибка удаления'];
+        }
+
+    }
+
 }
